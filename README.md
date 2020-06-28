@@ -49,6 +49,7 @@ catkin_install_python(
 ```
 Exit the file (Ctrl+X)
 ```bash
+chmod +x mainControl.py rosPub.py velocityCalc.py
 cd ~/bot_ws
 catkin_make -j1
 source ./devel/setup.bash
