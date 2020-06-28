@@ -1,5 +1,5 @@
 # ros_ps4
-Provides instructions regarding ROS and PS4 Controller workspace
+ROS & PS4 Controller
 
 ## Make Sure You've Installed
 * [ROS Melodic](http://wiki.ros.org/melodic/Installation)
