@@ -36,6 +36,7 @@ cd ~/bot_ws/src/ps4_bot/scripts
 nano CMakeLists.txt
 ```
 * Add the following lines into the text file
+
 From section "## Install ##"
 ```
 catkin_install_python(
