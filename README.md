@@ -50,7 +50,7 @@ catkin_install_python(
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 ```
-Exit the file (Ctrl+X)
+Exit the file (':wq!')
 ```bash
 cd ~/bot_ws/src/ps4_bbot/scripts
 chmod +x mainControl.py rosPub.py velocityCalc.py
