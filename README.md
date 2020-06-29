@@ -1,5 +1,5 @@
 # ros_ps4
-ROS & PS4 Controller
+ROS & PS4 Controller for Jetson NX
 
 ## Make Sure You've Installed
 * [ROS Melodic](http://wiki.ros.org/melodic/Installation)
@@ -36,7 +36,7 @@ sudo chmod a+rw /dev/input/js0
 * Modify the CMakeLists.txt
 ```bash
 cd ~/bot_ws/src/ps4_bot
-nano CMakeLists.txt
+vim CMakeLists.txt
 ```
 * Add the following lines into the text file
 
@@ -61,7 +61,7 @@ source ./devel/setup.bash
 * Run the files
 ```bash
 roscore
-rosparam set joy_node/dev "/dev/input/jsX" (optional, tell the joy node which joystick device to use- the default is js0. )
+rosparam set joy_node/dev "/dev/input/jsX" #(optional, tell the joy node which joystick device to use- the default is js0. )
 rosrun joy joy_node
 rosrun ps4_bot mainControl.py
 ```
