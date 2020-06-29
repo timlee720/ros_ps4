@@ -1,0 +1,6 @@
+#!/bin/bash
+echo start_one_click
+
+bash /home/ubuntu/Desktop/one_click.bash
+
+echo end_one_click
