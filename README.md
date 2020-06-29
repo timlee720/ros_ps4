@@ -60,6 +60,7 @@ source ./devel/setup.bash
 * Run the files
 ```bash
 roscore
+rosparam set joy_node/dev "/dev/input/jsX" (optional, tell the joy node which joystick device to use- the default is js0. )
 rosrun joy joy_node
 rosrun ps4_bot mainControl.py
 ```
