@@ -35,7 +35,7 @@ sudo chmod a+rw /dev/input/js0
 * Put the python files into ~/bot_ws/src/ps4_bot/scripts folder
 * Modify the CMakeLists.txt
 ```bash
-cd ~/bot_ws/src/ps4_bot/scripts
+cd ~/bot_ws/src/ps4_bot
 nano CMakeLists.txt
 ```
 * Add the following lines into the text file
