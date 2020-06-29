@@ -20,6 +20,9 @@ catkin_create_pkg ps4_bot std_msgs rospy roscpp
 git clone https://github.com/ros-drivers/rosserial.git
 cd ~/bot_ws
 catkin_make -j1
+. ~/catkin_ws/devel/setup.bash
+roscd beginner_tutorials 
+mkdir scripts
 ```
 
 * Install ROS Joy Package
