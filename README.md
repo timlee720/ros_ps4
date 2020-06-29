@@ -21,7 +21,7 @@ git clone https://github.com/ros-drivers/rosserial.git
 cd ~/bot_ws
 catkin_make -j1
 . ~/catkin_ws/devel/setup.bash
-roscd beginner_tutorials 
+roscd ps4_bot 
 mkdir scripts
 ```
 
@@ -52,6 +52,7 @@ catkin_install_python(
 ```
 Exit the file (Ctrl+X)
 ```bash
+cd ~/bot_ws/src/ps4_bbot/scripts
 chmod +x mainControl.py rosPub.py velocityCalc.py
 cd ~/bot_ws
 catkin_make -j1
