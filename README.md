@@ -20,7 +20,7 @@ catkin_create_pkg ps4_bot std_msgs rospy roscpp
 git clone https://github.com/ros-drivers/rosserial.git
 cd ~/bot_ws
 catkin_make -j1
-. ~/catkin_ws/devel/setup.bash
+. ~/bot_ws/devel/setup.bash
 roscd ps4_bot 
 mkdir scripts
 ```
@@ -40,7 +40,7 @@ vim CMakeLists.txt
 ```
 * Add the following lines into the text file
 
-From section "## Install ##"
+In section "## Install ##"
 ```
 catkin_install_python(
   PROGRAMS 
@@ -52,7 +52,7 @@ catkin_install_python(
 ```
 Exit the file (':wq!')
 ```bash
-cd ~/bot_ws/src/ps4_bbot/scripts
+cd ~/bot_ws/src/ps4_bot/scripts
 chmod +x mainControl.py rosPub.py velocityCalc.py
 cd ~/bot_ws
 catkin_make -j1
