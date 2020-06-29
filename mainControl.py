@@ -172,6 +172,8 @@ class ps4Controller:
 
     
     def optionCallback(self, state):
+        if(state):
+            print("Reset")
         print("Options is: {}".format(state))
         self.pub.optionPublish(state)
         return
