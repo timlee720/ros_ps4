@@ -1,6 +1,16 @@
 #!/bin/bash
+
 echo start_one_click
 
 bash /home/ubuntu/Desktop/one_click.bash
 
 echo end_one_click
+
+sleep 10
+
+#optional for jetson NX pwm fan open automatically
+#sudo /usr/bin/jetson_clocks 
+
+#sudo sh -c ‘echo 255 > /sys/devices/pwm-fan/target_pwm’
+
+exit 0
