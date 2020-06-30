@@ -14,9 +14,9 @@ sudo chmod 666 /dev/ttyACM3
 #roscore &
 
 sleep 1
-#cd ~/robocon/catkin_ws
+cd /home/ubuntu/bot_ws
 source /opt/ros/melodic/setup.bash
-source /home/ubuntu/robocon/catkin_ws/devel/setup.bash
+source /home/ubuntu/bot_ws/devel/setup.bash 
 nohup roscore &
 sleep 8
 
