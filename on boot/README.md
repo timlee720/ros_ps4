@@ -10,7 +10,7 @@ sudo vim /etc/rc.local
 
 * Enable & Start the rc-local.service
 ```bash
-chmod +x /etc/rc.local  # ensure it's executable
+sudo chmod +x /etc/rc.local  # ensure it's executable
 sudo systemctl enable rc-local.service
 sudo systemctl start rc-local.service
 ```
