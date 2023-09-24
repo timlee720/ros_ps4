@@ -27,7 +27,9 @@ signal.signal(signal.SIGINT, signalHandler)
 class ps4Controller:
     def __init__(self):
         rospy.init_node('ps4Talker', anonymous = True)
-        rospy.Subscriber('/joy', Joy, self.callback)
+        #queue_size to limit the queue size that store the message send from the publisher
+        #important to prevent the overflow of the output signal from joystick 
+        rospy.Subscriber('/joy', Joy, self.callback, tcp_nodelay = True, queue_size = 1)
         rospy.Subscriber('/opencv', Twist, self.opencvCallback)
         self.rate = rospy.Rate(20)
         self.pub = Talker()
